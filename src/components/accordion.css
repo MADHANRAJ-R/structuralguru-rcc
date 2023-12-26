@@ -1,0 +1,145 @@
+.accordion-div {
+  padding: 50px 20px;
+  background-color: rgb(255, 251, 243);
+}
+
+.accordion-inner-div {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem auto;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 40px 20px;
+}
+
+.accordion-heading {
+  margin: 2rem 0;
+  color: goldenrod;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 1.5px;
+}
+.accordion-inner-div p{
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 1.5rem;
+  width: 90%;
+}
+.accordion-inner-div p a{
+  color: rgb(215, 196, 154);
+  text-decoration: none;
+  
+}
+.accordion-inner-div p a:hover{
+  text-decoration: underline;
+}
+.accordion-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.accordion-title {
+  width: 100%;
+  font-size: 18px;
+  padding: 20px 0;
+  cursor: pointer;
+  border-bottom: 0.1px solid grey;
+  color: rgb(215, 196, 154);
+  position: relative;
+}
+
+.accordion-title:hover,
+.accordion-title.active {
+  color: rgb(0, 255, 247);
+}
+
+.arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.5s;
+}
+
+
+.accordion-title.active .arrow {
+  transform: translateY(-50%) rotateX(180deg);
+}
+
+.inverted .arrow {
+  transform: translateY(-50%) rotateX(180deg);
+}
+
+.accordion-content {
+  width: 100%;
+  padding: 15px 15px;
+  font-size: 17px;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  color: rgb(255, 251, 243);
+}
+.acc-payment-link {
+  color: lightgreen;
+}
+
+@media screen and (max-width: 900px) {
+  .accordion-div {
+    padding: 10px 8px;
+  }
+
+  .accordion-inner-div {
+    margin: 3rem auto;
+    padding: 50px 10px;
+  }
+
+  .accordion-heading {
+    margin: 0;
+    text-align: center;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+  }
+  .accordion-inner-div p{
+    text-align:center;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    width: 100%;
+    
+  }
+  .accordion-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion-title {
+    font-size: 15px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .arrow-div {
+    flex-shrink: 0;
+    width: 50px;
+  }
+
+  .arrow {
+    font-size: 20px;
+  }
+
+  .accordion-content {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,437 @@
+.sec-5 {
+  background: linear-gradient(
+    89deg,
+    rgb(21, 74, 189) 0.1%,
+    rgb(26, 138, 211) 51.5%,
+    rgb(72, 177, 234) 100.2%
+  );
+  padding: 100px 20px;
+}
+
+.payment-info-div {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-title {
+  color: rgb(33, 33, 33);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.payment-container {
+  width: 100%;
+  
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-method-1 {
+  display: flex;
+  width: 100%;
+  
+  flex-wrap: wrap;
+  margin: 0 auto;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 1rem;
+  
+  
+ 
+}
+
+.basic-plan-column,
+.pro-plan-column,
+.pro-plus-column {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  margin: 1rem auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 30%;
+  min-height:80vh;
+  color: black;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  box-sizing: border-box;
+}
+.pro-plan-mode-1{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  margin-bottom: 1rem;
+  
+}
+.pro-plan-mode-1 b{
+  display: flex;
+  font-size: 1.3em;
+  margin-top: 10px;
+  color: red;
+}
+.pro-plan-mode{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  
+}
+.pro-plan-mode h1{
+  margin-right: 1.5rem;
+}
+.pro-plan-mode b{
+  font-size: 1.3em;
+  color: red;
+}
+
+.basic-plan-column:hover,
+.pro-plan-column:hover,
+.pro-plus-column:hover {
+
+  .plans-h1 {
+    color: goldenrod;
+  }
+  .plans-p{
+    color: white;
+  }
+  .plans-p p{
+    color: rgb(215, 196, 154);
+  }
+  .plan-rec{
+    
+    color: black;
+    background-color: rgb(255, 251, 243);
+  }
+  .plans-p2{
+    color: rgb(178, 176, 171);
+  }
+  .basic-plan-features li{
+    color: rgb(215, 196, 154);
+  }
+  .payment-center-line {
+    
+    border-bottom: 0.1px solid #706f6f;
+    
+  }
+
+
+
+  background-color:black;
+  color: white;
+  border: 3.5px solid goldenrod;
+  transform: scale(1.05);
+
+}
+
+.plans-h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  text-wrap: nowrap;
+ 
+}
+
+.basic-h1{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.plan-rec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 1rem;
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius:2rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.plans-p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-wrap: nowrap;
+  
+}
+.plans-p b{
+  font-size: 34px;
+  margin-right: 10px;
+}
+.plans-p {
+  
+  font-size: 17px;
+  
+  
+  
+}
+.plans-p span{
+  display: flex;
+  font-size: 17px;
+  
+  justify-content: left;
+  
+}
+.plans-p2 {
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 15px;
+  color: #333;
+}
+.plans-p3 {
+  
+  text-align: left;
+  margin-bottom: 15px;
+  
+}
+
+.payment-center-line {
+  width: 100%;
+  margin-left: 0;
+  border-bottom: 0.1px solid #333;
+  
+}
+
+ul.basic-plan-features {
+  list-style: none;
+  padding: 10px 0;
+
+}
+
+ul.basic-plan-features li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+ul.basic-plan-features li img {
+  margin-right: 10px;
+  
+  width: 15px;
+  height:15px;
+  
+}
+
+.plans-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  animation: none;
+  box-shadow: none;
+  transition: transform 0.2s ease-in;
+  
+  
+}
+.plans-link{
+  margin-bottom: 0;
+}
+
+.plans-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+
+
+
+.payment-center-line-forcolumn {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: black;
+}
+.font-bold-payment {
+  font-size: 22px;
+}
+
+
+.payment-info2 {
+  color: #555;
+  font-size: 21px;
+  margin-bottom: 15px;
+  padding: 5px 20px;
+}
+
+
+.payment-method-2 {
+  background-color: rgb(255, 251, 243);
+  width: 85%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contactPage{
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.contactPage h1{
+  color: rgb(33, 33, 33);
+ 
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 1.5px;
+  text-wrap: nowrap;
+}
+.contactform{
+  
+  margin-top: 20px;
+  width: 100%;
+  
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.email,.fullname{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 40px 10px 10px;
+  border: 1.5px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+
+  letter-spacing: 1px;
+  background-color: rgb(255, 251, 243);
+  color: black;
+}
+.email:focus,.fullname:focus{
+  outline: none;
+}
+.submitbtn{
+  animation: none;
+}
+.submitbtn:hover{
+  background-color: red;
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 900px) {
+  .sec-5 {
+    padding: 50px 20px;
+  }
+
+  .payment-info-div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .payment-title {
+    font-size: 24px;
+  }
+
+  
+  .payment-info2 {
+    font-size: 18px;
+    text-align:left;
+    padding: 0;
+  }
+
+  .payment-link {
+    font-size: 16px;
+  }
+  .payment-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .payment-method-1 {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .basic-plan-column,
+  .pro-plan-column,
+  .pro-plus-column {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 55vh;
+  }
+  .plan-rec{
+    margin:0;
+    
+    padding: 0 10px;
+    border-radius:1rem;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .payment-method-2 {
+    width: 100%;
+  }
+
+  .font-bold-payment {
+    font-size: 18px;
+  }
+  .contactPage{
+    margin-top: 3rem;
+    padding: 10px 10px;
+    
+  
+  }
+  .contactPage h1{
+    color: rgb(33, 33, 33);
+   
+    font-size: 28px;
+    
+    text-wrap: wrap;
+  }
+  .pro-plan-mode b{
+    font-size: 1.1em;
+   
+  }
+  .pro-plan-mode-1 b{
+    
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .basic-plan-column,
+  .pro-plan-column,
+  .pro-plus-column {
+    flex: 1;
+    width: auto;
+  }
+  .payment-method-1 {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  
+
+  
+}

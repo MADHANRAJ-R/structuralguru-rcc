@@ -1,0 +1,128 @@
+footer {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 1rem 15rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-wrap: nowrap;
+  
+  z-index: 1000;
+}
+body {
+  margin-bottom: 80px;
+}
+footer h2{
+  color: goldenrod;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.price-div {
+  display: flex;
+  align-items: center;
+}
+
+
+.price-2 {
+  margin-left: 15px;
+}
+.price h2{
+  font-size: 30px;
+}
+.price-2 h1 {
+  font-weight: 100;
+  font-size: 1.3rem;
+  text-decoration: line-through;
+}
+.price-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.price h3 {
+  color: rgb(0, 255, 247);
+  
+}
+.price h3 span {
+  font-size: 1em;
+  font-weight: bold;
+  color: orangered;
+}
+
+/* button */
+
+button {
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(243, 30, 7, 0.8);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.8);
+  transition: box-shadow 0.2s ease-in-out;
+  animation: glow 1.8s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(231, 76, 60, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.8);
+  }
+}
+
+@keyframes glow2 {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 165, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    flex-direction: column;
+    padding:0.2rem 1rem;
+    
+  }
+
+  .price {
+    text-align: center;
+    
+  }
+
+  
+  .price h2{
+    font-size: 22px;
+  }
+  .price-1 h1{
+    font-size: 24px;
+  }
+}
