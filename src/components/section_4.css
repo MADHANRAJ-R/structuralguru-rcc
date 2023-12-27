@@ -1,5 +1,5 @@
 .sec-4 {
-  background-color: rgb(33, 33, 33);
+  background-color: white;
   padding: 40px 20px;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .training-heading {
-  color: goldenrod;
+  color: black;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -24,7 +24,7 @@
 }
 .sec-4-center-line {
   width: 120px;
-  border-bottom: 0.1px solid rgb(129, 106, 57);
+  border-bottom: 0.1px solid black;
   margin: auto;
 }
 
@@ -39,12 +39,12 @@
 
 .training-targets li {
   width: 16rem;
-  color: black;
+  color: white;
   font-size: 19px;
   margin-bottom: 1rem;
-  background-color: rgb(215, 196, 154);
+  background-color: maroon;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   text-align: center;
   transition: transform 0.2s ease;
