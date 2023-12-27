@@ -1,6 +1,7 @@
 .sec-7 {
   padding: 70px 40px 10px 40px;
   width: 100%;
+  background-color: maroon;
 }
 
 .video-review-container {
@@ -9,6 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color:maroon;
+  padding: 1rem;
 }
 
 .video-review-container h1 {
@@ -18,7 +21,7 @@
   font-family: "Fjalla One", sans-serif;
   letter-spacing: 1.5px;
   margin-bottom: 40px;
-  color: goldenrod;
+  color:white;
 }
 
 .video-main-div {
@@ -29,9 +32,9 @@
 }
 
 .video-review-card {
-  border: 1px solid #ddd;
+  border: 2px solid black;
   padding: 15px;
-  background-color: rgb(255, 251, 243);
+  background-color:white;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -42,12 +45,13 @@
 }
 
 .video-review-card:hover {
-  box-shadow: 0 0 10px rgba(238, 219, 219, 0.992);
+  box-shadow: 0 0 20px 10px rgba(44, 44, 44,1);
   transform: scale(1.03);
 }
 
 .reviewer-name {
   font-weight: bold;
+  color:black;
 }
 
 .reviewer-video {
