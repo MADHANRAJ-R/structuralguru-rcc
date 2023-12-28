@@ -7,6 +7,9 @@ import tick from "../assets/tick-symbol.png";
 import "./companyLogo.css";
 
 const Logos = () => {
+
+
+
   return (
     <section className="com-logo-sec">
       <div className="course-main-div">

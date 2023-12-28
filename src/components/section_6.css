@@ -175,10 +175,15 @@
   animation-play-state: paused;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
   .google-review-div {
     width: 90%;
     
+  }
+  .google-div {
+    margin: 0 auto;
+    width: 80%;
+    height: 40vh;
   }
 }
 

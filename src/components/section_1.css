@@ -15,6 +15,7 @@
   text-align: center;
   margin: 0 auto;
   width: 100%;
+  gap: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -129,6 +130,7 @@
   justify-content: space-between;
   align-items: center;
   width: 40%;
+  gap: 20px;
   
   
 
@@ -170,15 +172,24 @@
 }
 
 @media screen and (max-width: 900px) {
-  .sec-1-div {
-    padding: 50px 10px;
+  .sec-1{
+   
+    padding: 0 10px;
+    
+    
   }
-
+  .sec-1-div {
+    padding:  10px;
+  }
+  .logo-img {
+    flex-direction: column;
+  }
+  
   .quotes {
     width: 100%;
   }
   .company-name{
-    
+    font-size: 30px;
     letter-spacing: 3px;
     margin-top:5px ;
   }
@@ -199,14 +210,10 @@
   }
   .quotes-2 {
     box-sizing: border-box;
-    color: goldenrod;
-    background-color: black;
+    
     padding: 10px;
     letter-spacing: 1.5px;
-    font-size: 17px;
-
-
-    line-height: 30.6224px;
+    font-size: 22px;
   }
   .motto-quote {
     font-size: 1.4em;
@@ -243,10 +250,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
   }
 
   .offer-button button {
     padding: 15px 30px;
-    margin-top: 3rem;
+    
+    
+  }
+  
+}
+
+@media screen and (min-width: 900px) and (max-width:1100px){
+  .offer-timer-div {
+    width: 70%;
+    
   }
 }

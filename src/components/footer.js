@@ -53,7 +53,7 @@ const Footer = () => {
       </div>
       <div className="price-3">
         <a href="https://rzp.io/l/phBlT9OqT" target="_blank" rel="noreferrer">
-          <button>Book Your Spot Now</button>
+          <button className="footer-btn">Book Your Spot Now</button>
         </a>
         
       </div>

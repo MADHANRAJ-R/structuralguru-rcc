@@ -6,14 +6,16 @@
 }
 section {
   
-  min-height: 100vh;
+  min-height: 50vh;
   overflow: hidden;
   
 }
 
 /* scroll transition */
 
-/* section .animate{
+
+
+section .animate{
   opacity: 0;
   filter: blur(5px);
   transition: 1s;
@@ -162,4 +164,4 @@ section.show-animate .animate{
 }
 .contact-sec.show-animate .animate{
   transform: translateY(0);
-} */
+}
