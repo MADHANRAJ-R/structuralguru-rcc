@@ -178,7 +178,7 @@ const section7 = () => {
           </div>
         </div>
         <div className="pricing-btn">
-          <Link activeClass='active' to='paymentId' spy={true} smooth={true} offset={50} duration={1000} className="offer-button"><button>Pricing Plans</button></Link>
+          <Link activeClass='active' to='paymentId' spy={true} smooth={true} offset={50} duration={1000} className="offer-button"><button>Buy Now</button></Link>
         </div>
       </div>
     </section>
