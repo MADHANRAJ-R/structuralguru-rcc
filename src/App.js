@@ -8,34 +8,11 @@ import Section6 from './components/section_6'
 import Section7 from './components/section_7'
 import Accordion from './components/accordion'
 import Subscribe from './components/subscribe _section'
-// import Footer from './components/footer'
+import Footer from './components/footer'
 import Logos from "./components/companyLogo";
 function App() {
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the footer element
-    var footer = document.getElementById("footer");
-
-    // Check if the page is at the top (home page)
-    function isHomePage() {
-      return window.scrollY === 0;
-    }
-
-    // Show/hide footer based on scroll position
-    function toggleFooter() {
-      if (isHomePage()) {
-        footer.style.display = "none";
-      } else {
-        footer.style.display = "block";
-      }
-    }
-
-    // Add scroll event listener to toggle footer
-    window.addEventListener("scroll", toggleFooter);
-
-    // Initial check to set footer visibility on page load
-    toggleFooter();
-  });
+ 
 
   return (
     <main>
@@ -50,7 +27,7 @@ function App() {
       <Section7 />
       <Accordion />
       <Subscribe />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }

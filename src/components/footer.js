@@ -38,10 +38,39 @@ const Footer = () => {
   }, []);
 
 
-  
+
+  const [isHomePage, setIsHomePage] = useState(true);
+
+  useEffect(() => {
+   
+    const checkHomePage = () => {
+      setIsHomePage(window.scrollY <= 200); 
+    };
+
+    const toggleFooter = () => {
+      const footer = document.getElementById('footer-1');
+      if (footer) {
+        footer.style.display = isHomePage ? 'none' : 'flex';
+      }
+    };
+
+    window.addEventListener('scroll', () => {
+      checkHomePage();
+      toggleFooter();
+    });
+
+   
+    checkHomePage();
+    toggleFooter();
+
+    
+    return () => {
+      window.removeEventListener('scroll', toggleFooter);
+    };
+  }, [isHomePage]);
 
   return (
-    <footer id="footer">
+    <footer id="footer-1">
       <div className="price">
         <h2>Basic Plan</h2>
         <h3 >
