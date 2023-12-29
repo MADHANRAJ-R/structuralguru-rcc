@@ -6,8 +6,8 @@
   padding: 40px;
   border: 1px solid black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   
   
@@ -16,7 +16,7 @@
 .sec-1-div {
   padding: 50px 20px;
   text-align: center;
-  margin: 0 auto;
+  margin-top: 10px;
   width: 100%;
   gap: 15px;
   display: flex;
@@ -182,7 +182,7 @@
 
 @media screen and (max-width: 900px) {
   .sec-1{
-   
+    
     padding: 0 10px;
     
     
