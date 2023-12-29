@@ -72,18 +72,20 @@ const Footer = () => {
   return (
     <footer id="footer-1">
       <div className="price">
-        <h2>Basic Plan</h2>
+        <h2>Register Now at Only</h2>
+        <div className="price-quote"><b>199</b><p>999</p></div>
+        
+      </div>
+      <div className="price-3">
+        <a href="https://rzp.io/l/01xuMSspo" target="_blank" rel="noreferrer">
+          <button className="footer-btn">Book Your Spot Now</button>
+        </a>
         <h3 >
           Offer Ends in{" "}
           <span class="minutes">{String(minutes).padStart(2, "0")}</span>
           <span>:</span>
           <span class="seconds">{String(seconds).padStart(2, "0")}</span> Mins
         </h3>
-      </div>
-      <div className="price-3">
-        <a href="https://rzp.io/l/phBlT9OqT" target="_blank" rel="noreferrer">
-          <button className="footer-btn">Book Your Spot Now</button>
-        </a>
         
       </div>
     </footer>

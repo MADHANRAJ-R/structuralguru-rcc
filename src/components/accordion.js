@@ -11,26 +11,26 @@ const Accordion = () => {
   const faqData = [
     {
       question:
-        "Is this PRACTICAL STRUCTURAL DESIGN CONSULTANCY Course in online mode?",
-      answer: "Yes above are details of VIDEO MODE TRAINING in 200 hrs. ",
+        "Is this PRACTICAL RCC MANUAL DESIGN TRAINING IN XL SHEETS Course in online mode?",
+      answer: "Yes, the course is available in ONLINE MODE ONLY. ",
     },
 
     {
       question: "What is the course fee of Video mode?",
       answer:
-        "Fee will be Just Rs.3500/- one time only . This special discount will expire soon, so grab it quickly.",
+        "Fee will be Just Rs.199/- one time only . This special discount will expire soon, so grab it quickly.",
     },
 
     {
       question: "What is the duration of Video mode?",
       answer:
-        "Total 200 hrs of video training. Easily can be completed in 2 months duration, even though video access will be granted for 1 year period. You can watch in your comfortable time. ",
+        "Total 35 hrs of video training. Easily can be completed in 2 months duration, even though video access will be granted for 1 year period. You can watch in your comfortable time. ",
     },
 
     {
       question: "Do you have live mode also?",
       answer:
-        "Yes we have live webinar mode in Skype and fee will be Rs.50000/- & 8 months duration. Fee will be monthly Rs.6250/- X 8 months EMI.",
+        "No. We have live mode only for detailed PRACTICAL STRUCTURAL DESIGN CONSULTANCY TRAINING.",
     },
 
     {
@@ -52,17 +52,17 @@ const Accordion = () => {
     },
 
     {
-      question: "Where is 70% discount payment link?",
+      question: "Where is 80% discount payment link?",
       answer: (
         <span>
           Link here:{" "}
           <a
-            href="https://rzp.io/l/phBlT9OqT"
+            href="https://rzp.io/l/01xuMSspo"
             target="_blank"
             rel="noopener noreferrer"
             className="acc-payment-link"
           >
-            https://rzp.io/l/phBlT9OqT
+            https://rzp.io/l/01xuMSspo
           </a>
         </span>
       ),
@@ -77,7 +77,7 @@ const Accordion = () => {
     {
       question: "What is the language taught?",
       answer:
-        "Presently 200 hrs Video mode is available in English, Telugu, Hindi and Tamil languages.",
+        "The course is taught in simple ENGLISH language.",
     },
 
     {
@@ -86,11 +86,6 @@ const Accordion = () => {
         "We refer CV of completed persons in our VIP business owner's circle where continuous requirements will be emerging from them. At the end of the training, the skill level will be super high that easily any design role interview will be passed. More over one can start their own consultancy too or start part time consultancy works as well as alternate profession.",
     },
 
-    {
-      question: "What are the software covered in this training?",
-      answer:
-        "Structural Ananlysis, Design and Detailing softwares covered are  Etabs, StaadPro, SAFE, RCDC and IdeaStatica.",
-    },
 
     {
       question:

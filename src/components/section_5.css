@@ -40,10 +40,8 @@
   display: flex;
   width: 100%;
   
-  flex-wrap: wrap;
   margin: 0 auto;
-  column-gap: 20px;
-  row-gap: 20px;
+  
   justify-content: space-between;
   align-items: center;
   padding:1rem 1rem;
@@ -52,18 +50,17 @@
  
 }
 
-.basic-plan-column,
-.pro-plan-column,
-.pro-plus-column {
+.pro-plan-column
+ {
   display: flex;
   flex-direction: column;
   justify-content:space-evenly;
   margin: 1rem auto;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: white;
   border: 1px solid #333;
   border-radius: 10px;
-  width: 30%;
+  width: 60%;
   min-height:80vh;
   color: black;
   transition: background-color 0.5s, color 0.5s, transform 0.5s;

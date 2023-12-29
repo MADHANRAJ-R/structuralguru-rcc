@@ -21,9 +21,8 @@ const section3 = () => {
                 height={20}
               />
             </span>
-            This training is available in 200 hrs pre-recorded video
-            mode(Basic), live zoom webinar mode (Pro) and live offline mode (Pro
-            plus) in English, Tamil, Hindi and Telugu languages.{" "}
+            This training is available in 35 hrs pre-recorded video
+            mode in English language.{" "}
           </li>
           <li className="animate" style={{ "--i": 1 }}>
             <span>
@@ -135,20 +134,7 @@ const section3 = () => {
             </span>
             Paid internship workshops training for students.
           </li>
-          <li className="animate" style={{ "--i": 10 }}>
-            <span>
-              <img
-                className="tick-sym"
-                src={tick}
-                alt="tick symbol"
-                width={20}
-                height={20}
-              />
-            </span>
-            We Provide 100% cash back, if one joined with us in business
-            development team (training will be provided by us) and completed 5
-            nos sales of this same training by him/her.
-          </li>
+          
         </ul>
         <div className="pricing-btn">
           <Link activeClass='active' to='paymentId' spy={true} smooth={true} offset={50} duration={1000} className="offer-button"><button>Buy Now</button></Link>

@@ -101,7 +101,7 @@ const Section1 = () => {
             duration={1000}
             className="offer-button"
           >
-            <button>Go to purchase</button>
+            <button>Register Now Only at Rs.199/-</button>
           </Link>
         </div>
       </div>

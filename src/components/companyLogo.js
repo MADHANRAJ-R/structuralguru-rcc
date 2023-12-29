@@ -28,8 +28,9 @@ const Logos = () => {
                     height={20}
                   />
                 </span>
-                To become expert in manual RCC & STEEL design calculations.
+                To become expert in manual RCC design calculations.
               </li>
+              
               <li>
                 <span>
                   <img
@@ -40,20 +41,7 @@ const Logos = () => {
                     height={20}
                   />
                 </span>
-                To become expert in 5 softwares (Etabs, Staadpro
-                connect,Safe,Rcdc,IdeaStatica) based RCC & Steel designs.
-              </li>
-              <li>
-                <span>
-                  <img
-                    className="tick-sym"
-                    src={tick}
-                    alt="tick symbol"
-                    width={20}
-                    height={20}
-                  />
-                </span>
-                To become expert in both RCC & STERL manual detailing and
+                To become expert in RCC manual detailing and
                 automated software based detailing.
               </li>
               <li>
@@ -66,7 +54,7 @@ const Logos = () => {
                     height={20}
                   />
                 </span>
-                To practice RCC & STEEL design under live project and through
+                To practice RCC design under live project and through
                 expert guidance.
               </li>
 
