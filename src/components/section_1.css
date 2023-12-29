@@ -6,8 +6,8 @@
   padding: 40px;
   border: 1px solid black;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 
   
   
@@ -188,8 +188,9 @@
     
   }
   .sec-1-div {
-    padding:  10px;
-    margin-top: 10px;
+    padding: 10px;
+    
+    
   }
   .logo-img {
     flex-direction: column;
