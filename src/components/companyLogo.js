@@ -11,7 +11,7 @@ const Logos = () => {
 
 
   return (
-    <section className="com-logo-sec">
+    <section className="com-logo-sec show-animate">
       <div className="course-main-div">
         
         <div className="courese-inner-div">

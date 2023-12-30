@@ -73,7 +73,7 @@ const Footer = () => {
     <footer id="footer-1">
       <div className="price">
         <h2>Register Now at Only</h2>
-        <div className="price-quote"><b>199</b><p>999</p></div>
+        <div className="price-quote"><b>₹ 199</b><p>₹ 999</p></div>
         
       </div>
       <div className="price-3">

@@ -49,23 +49,23 @@ section.show-animate .animate{
   width: 0;
 }
 
-.sec-1 .left-div{
+.com-logo-sec .left-div{
   transform: translateX(-100%);
   
  
 
 }
-.sec-1.show-animate .left-div{
+.com-logo-sec.show-animate .left-div{
   transform: translateX(0);
 }
 
-.sec-1 .right-div{
+.com-logo-sec .right-div{
   transform: translateX(100%);
   
  
 
 }
-.sec-1.show-animate .right-div{
+.com-logo-sec.show-animate .right-div{
   transform: translateX(0);
 }
 

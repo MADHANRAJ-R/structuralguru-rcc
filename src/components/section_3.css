@@ -56,20 +56,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1rem;
+  row-gap: 2rem;
   color: black;
   margin-top: 4rem;
   
  
 }
-.more-content-div a button {
-  background-color: rgb(22, 201, 67);
-  animation: none;
-  box-shadow: none;
-  padding: 1rem;
-  border-radius: 0.5rem;
+/* Assuming the class "course-pdf" is used for styling */
+.course-pdf {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3498db; /* Set your desired background color */
+  color: #ffffff; /* Set your desired text color */
+  border-radius: 5px;
+  border: 2px solid #3498db; /* Set your desired border color */
   cursor: pointer;
+  transition: transform 0.5s ease, letter-spacing 0.5s ease;
 }
+
+.course-pdf:hover {
+  background-color: #2980b9;
+  border-color: #2980b9; 
+  color: #ffffff; 
+  transform: translateY(10%);
+  letter-spacing: 1px;
+}
+
 
 
 .brochureImg-div{
@@ -91,6 +106,7 @@
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (max-width: 900px) {
   .feature-list {
     width: 100%;
@@ -99,7 +115,7 @@
   .more-content-div {
     width: 100%;
     text-align: center;
-    margin-top: 0;
+    margin-top: 1rem;
     padding: 0;
   }
   .brochureImg-div{

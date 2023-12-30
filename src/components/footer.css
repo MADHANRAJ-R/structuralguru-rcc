@@ -97,8 +97,11 @@ footer h2{
   background-color: rgba(243, 30, 7, 0.8);
   color: #fff;
   box-shadow: 0 0 10px rgba(231, 76, 60, 0.8);
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease;
   animation: glow 1.8s infinite;
+}
+.footer-btn:hover{
+  transform: scale(1.03);
 }
 
 @keyframes glow {

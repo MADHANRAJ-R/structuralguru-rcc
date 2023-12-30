@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-scroll';
 import "./section_3.css";
 import tick from "../assets/tick-symbol.png";
-// import broucherImg from "../assets/img1.webp";
+import broucherImg from "../assets/rccImg.jpg";
 
 const section3 = () => {
   return (
@@ -142,9 +142,9 @@ const section3 = () => {
       </div>
       <div className="more-content-div animate">
         
-        {/* <div className="brochureImg-div">
+        <div className="brochureImg-div">
           <img src={broucherImg} alt="broucherImg" className="brochure-img" />
-        </div> */}
+        </div>
         <a
           href="https://img1.wsimg.com/blobby/go/2e42f0cb-874d-433d-b9df-6117d6050d2b/downloads/Syllabus%20for%20TR-1000-1%20PSDCT-V.pdf?ver=1668681551847"
           rel="noreferrer"
