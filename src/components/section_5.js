@@ -39,14 +39,11 @@ const Section5 = () => {
 
         <div className="payment-container">
           <div className="payment-method-1 animate">
-           
             <div className="pro-plan-column">
               <div className="pro-plan-mode">
                 <h1 className="plans-h1 basic-h1"> Basic </h1>
                 <b>(Pre-Recorded Video Mode)</b>
               </div>
-
-              
 
               <p className="plans-p3">
                 for 2-months access to videos and lifetime access to files.
@@ -63,7 +60,7 @@ const Section5 = () => {
                   <img src={tick} alt="" />
                   Duration - 2 months.
                 </li>
-                
+
                 <li>
                   <img src={tick} alt="" />
                   35 hrs pre-recorded videos.
@@ -76,8 +73,7 @@ const Section5 = () => {
                   <img src={tick} alt="" />
                   Pdf Code books, Notes and xl sheets supply.
                 </li>
-               
-                
+
                 <li>
                   <img src={tick} alt="" />
                   Certification.
@@ -93,8 +89,6 @@ const Section5 = () => {
                 <button className="plans-button">Buy Now</button>
               </a>
             </div>
-
-            
           </div>
 
           <div className="payment-center-line-forcolumn">
@@ -102,9 +96,10 @@ const Section5 = () => {
           </div>
           <div className="payment-method-2 animate">
             <p className="payment-info2">
-              You can also pay <b>Rs.199/-</b> directly to UPI Gpay/PhonePe/Paytm no.
-              9629121300. <b className="font-bold-payment">IMPORTANT:</b> After
-              payment send receipt & gmail id to WhatsApp no.{" "}
+              You can also pay <b>Rs.199/-</b> directly to UPI
+              Gpay/PhonePe/Paytm no. 9629121300.{" "}
+              <b className="font-bold-payment">IMPORTANT:</b> After payment send
+              receipt & gmail id to WhatsApp no.{" "}
               <b className="font-bold-payment">+91-9629121300</b>. We will
               dispatch the course contents to your gmail id and google drive.
             </p>
@@ -133,6 +128,12 @@ const Section5 = () => {
                 name="phoneNumber"
                 pattern="[0-9]{10}"
                 required
+              />
+              <input
+                type="state"
+                className="email"
+                placeholder="Your State"
+                name="from_state"
               />{" "}
               <br />
               <button type="submit" value="Send" className="submitbtn">
