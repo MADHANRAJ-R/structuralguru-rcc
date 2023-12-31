@@ -41,8 +41,7 @@ const Section5 = () => {
           <div className="payment-method-1 animate">
             <div className="pro-plan-column">
               <div className="pro-plan-mode">
-                <h1 className="plans-h1 basic-h1"> Basic </h1>
-                <b>(Pre-Recorded Video Mode)</b>
+                <h1 className="plans-h1 basic-h1"> Pre-Recorded Video Mode </h1>
               </div>
 
               <p className="plans-p3">
