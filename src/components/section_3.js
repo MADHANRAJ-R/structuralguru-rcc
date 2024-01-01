@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-scroll';
+import { Link } from "react-scroll";
 import "./section_3.css";
 import tick from "../assets/tick-symbol.png";
 import broucherImg from "../assets/rccImg.jpg";
@@ -21,8 +21,8 @@ const section3 = () => {
                 height={20}
               />
             </span>
-            This training is available in 35 hrs pre-recorded video
-            mode in English language.{" "}
+            This training is available in 35 hrs pre-recorded video mode in
+            English language.{" "}
           </li>
           <li className="animate" style={{ "--i": 1 }}>
             <span>
@@ -134,19 +134,27 @@ const section3 = () => {
             </span>
             Paid internship workshops training for students.
           </li>
-          
         </ul>
         <div className="pricing-btn">
-          <Link activeClass='active' to='paymentId' spy={true} smooth={true} offset={50} duration={1000} className="offer-button"><button>Buy Now</button></Link>
+          <Link
+            activeClass="active"
+            to="paymentId"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={1000}
+            className="offer-button"
+          >
+            <button>Buy Now</button>
+          </Link>
         </div>
       </div>
       <div className="more-content-div animate">
-        
         <div className="brochureImg-div">
           <img src={broucherImg} alt="broucherImg" className="brochure-img" />
         </div>
         <a
-          href="https://img1.wsimg.com/blobby/go/2e42f0cb-874d-433d-b9df-6117d6050d2b/downloads/Syllabus%20for%20TR-1000-1%20PSDCT-V.pdf?ver=1668681551847"
+          href="https://img1.wsimg.com/blobby/go/2e42f0cb-874d-433d-b9df-6117d6050d2b/downloads/PRMXD-001-%20PRACTICAL%20RCC%20MANUAL%20DESIGN%20TRAININ.pdf?ver=1703751856966"
           rel="noreferrer"
           target="_blank"
         >

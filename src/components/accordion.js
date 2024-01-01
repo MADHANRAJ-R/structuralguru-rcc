@@ -36,13 +36,13 @@ const Accordion = () => {
     {
       question: "How the videos will be sent?",
       answer:
-        "Once payment is done, we will send 200 hrs video & files to your gmail id. You can watch videos through your google drive.",
+        "Once payment is done, we will send 35 hrs video & files to your gmail id. You can watch videos through your google drive.",
     },
 
     {
       question: "Do all videos and files will have life time access?",
       answer:
-        "Videos will be granted 1 year access (even though in 2 months it can be easily completed), rest all xl files, manuals,pdf books, software files, etc all can be downloadable to life time access. Videos can't be downloadable only viewable to 1 year period.",
+        "Videos will be granted for 2 months access. Rest all xl files,pdf books, etc all can be downloadable to life time access. Videos can't be downloadable, only viewable to 2 months period.",
     },
 
     {
@@ -76,8 +76,7 @@ const Accordion = () => {
 
     {
       question: "What is the language taught?",
-      answer:
-        "The course is taught in simple ENGLISH language.",
+      answer: "The course is taught in simple ENGLISH language.",
     },
 
     {
@@ -85,7 +84,6 @@ const Accordion = () => {
       answer:
         "We refer CV of completed persons in our VIP business owner's circle where continuous requirements will be emerging from them. At the end of the training, the skill level will be super high that easily any design role interview will be passed. More over one can start their own consultancy too or start part time consultancy works as well as alternate profession.",
     },
-
 
     {
       question:
@@ -111,7 +109,14 @@ const Accordion = () => {
     <section className="accordion-div show-animate">
       <div className="accordion-inner-div animate">
         <h1 className="accordion-heading">Frequently Asked Questions</h1>
-        <p >Please reach us at <a href="mailto:admin@gururayarassociates.com">admin@gururayarassociates.com</a> or WA NO. 9629121300 or 94896 45708 if you cannot find an answer to your question.</p>
+        <p>
+          Please reach us at{" "}
+          <a href="mailto:admin@gururayarassociates.com">
+            admin@gururayarassociates.com
+          </a>{" "}
+          or WA NO. 9629121300 or 94896 45708 if you cannot find an answer to
+          your question.
+        </p>
 
         {faqData.map((faq, index) => (
           <div key={index} className="accordion-item ">
