@@ -10,14 +10,12 @@ const Popupopen = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    messageSent();
+    
     sendEmail();
     e.target.reset();
     document.querySelector(".popupdiv").style.display = "none";
   };
-  const messageSent = () => {
-    window.alert("Subscribed Successfully ! ");
-  };
+  
 
   const form = useRef();
   const sendEmail = () => {
