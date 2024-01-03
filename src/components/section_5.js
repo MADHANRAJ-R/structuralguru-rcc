@@ -1,37 +1,9 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React from "react";
 import "./section_5.css";
 import tick from "../assets/tick-symbol.png";
 
 const Section5 = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    messageSent();
-    sendEmail();
-    e.target.reset();
-  };
-  const messageSent = () => {
-    window.alert("Subscribed Successfully ! ");
-  };
-
-  const form = useRef();
-  const sendEmail = () => {
-    emailjs
-      .sendForm(
-        "service_5mnamig",
-        "template_sumy8vq",
-        form.current,
-        "lTkxREBj-LHdnWv1w"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  
   return (
     <section id="paymentId" className="sec-5 show-animate">
       <div className="payment-info-div">
@@ -104,42 +76,7 @@ const Section5 = () => {
             </p>
           </div>
 
-          <div className="contactPage">
-            <h1 className="contactPageTitle">For more offers, Subscribe </h1>
-
-            <form
-              className="contactform animate"
-              ref={form}
-              onSubmit={handleSubmit}
-            >
-              <input
-                type="email"
-                className="email"
-                placeholder="Your Email"
-                name="from_email"
-                required
-              />
-              <input
-                type="tel"
-                id="phoneNumber"
-                placeholder="Your WhatsApp Number"
-                className="fullname"
-                name="phoneNumber"
-                pattern="[0-9]{10}"
-                required
-              />
-              <input
-                type="state"
-                className="email"
-                placeholder="Your State"
-                name="from_state"
-              />{" "}
-              <br />
-              <button type="submit" value="Send" className="submitbtn">
-                Subscribe
-              </button>
-            </form>
-          </div>
+          
         </div>
       </div>
     </section>

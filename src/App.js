@@ -10,12 +10,14 @@ import Accordion from './components/accordion'
 import Subscribe from './components/subscribe _section'
 import Footer from './components/footer'
 import Logos from "./components/companyLogo";
+import Popup from "./components/popup";
 function App() {
 
  
 
   return (
     <main>
+      <Popup />
       <Section1 />
       <Logos />
       <Section3 />

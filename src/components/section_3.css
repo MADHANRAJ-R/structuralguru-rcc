@@ -62,17 +62,17 @@
   
  
 }
-/* Assuming the class "course-pdf" is used for styling */
+
 .course-pdf {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-  background-color: #3498db; /* Set your desired background color */
-  color: #ffffff; /* Set your desired text color */
+  background-color: #3498db; 
+  color: #ffffff; 
   border-radius: 5px;
-  border: 2px solid #3498db; /* Set your desired border color */
+  border: 2px solid #3498db; 
   cursor: pointer;
   transition: transform 0.5s ease, letter-spacing 0.5s ease;
 }
