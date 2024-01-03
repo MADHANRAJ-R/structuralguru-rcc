@@ -1,13 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import "./popup.css";
 
 const Popupopen = () => {
-  window.addEventListener("load", function () {
-    setTimeout(function open(event) {
-      document.querySelector(".popupdiv").style.display = "flex";
-    }, 1000);
-  });
+  useEffect(() => {
+    
+    document.querySelector(".popupdiv").style.display = "flex";
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -63,7 +62,7 @@ const Popupopen = () => {
             pattern="[0-9]{10}"
             required
           />
-          <select className="email" name="from_state">
+          <select className="email" name="from_state" >
             <option value="" disabled selected>
               Select your state
             </option>
