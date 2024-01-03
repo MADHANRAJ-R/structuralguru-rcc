@@ -40,7 +40,7 @@ const Popupopen = () => {
     <div className="popupdiv">
       <div className="contactPage">
         <h1 className="contactPageTitle">
-          Please fill out the form before making a purchase.{" "}
+          Please fill out the form.{" "}
         </h1>
 
         <form className="contactform" ref={form} onSubmit={handleSubmit}>
@@ -60,7 +60,7 @@ const Popupopen = () => {
             pattern="[0-9]{10}"
             required
           />
-          <select className="email" name="from_state" >
+          <select className="email" name="from_state" required>
             <option value="" disabled selected>
               Select your state
             </option>
@@ -92,6 +92,7 @@ const Popupopen = () => {
             <option value="Uttar Pradesh">Uttar Pradesh</option>
             <option value="Uttarakhand">Uttarakhand</option>
             <option value="West Bengal">West Bengal</option>
+            <option value="Other/Abroad">Other/Abroad</option>
           </select>{" "}
           <br />
           <button type="submit" value="Send" className="submitbtn">
