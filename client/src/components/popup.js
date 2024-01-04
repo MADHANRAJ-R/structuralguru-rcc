@@ -1,40 +1,81 @@
-import React, { useRef, useEffect } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from 'react';
+import axios from 'axios';
 import "./popup.css";
 
 const Popupopen = () => {
-  useEffect(() => {
-    
-    document.querySelector(".popupdiv").style.display = "flex";
-  }, []);
 
-  const handleSubmit = (e) => {
+  const [email, setEmail] = useState('');
+  const [number, setNumber] = useState('');
+  const [state, setState] = useState('');
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    sendEmail();
-    e.target.reset();
     document.querySelector(".popupdiv").style.display = "none";
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Invalid email format');
+      return;
+    }
+
+    // Send data to the server
+    try {
+      await axios.post('http://localhost:3001/send-email', { email, number, state });
+      
+      
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Error sending email. Please try again.');
+    }
   };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // useEffect(() => {
+    
+  //   document.querySelector(".popupdiv").style.display = "flex";
+  // }, []);
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+    
+  //   sendEmail();
+  //   e.target.reset();
+  //   document.querySelector(".popupdiv").style.display = "none";
+  // };
   
 
-  const form = useRef();
-  const sendEmail = () => {
-    emailjs
-      .sendForm(
-        "service_5mnamig",
-        "template_sumy8vq",
-        form.current,
-        "lTkxREBj-LHdnWv1w"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  // const form = useRef();
+  // const sendEmail = () => {
+  //   emailjs
+  //     .sendForm(
+  //       "service_5mnamig",
+  //       "template_sumy8vq",
+  //       form.current,
+  //       "lTkxREBj-LHdnWv1w"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
 
   return (
     <div className="popupdiv">
@@ -43,24 +84,28 @@ const Popupopen = () => {
           Please fill out the form.{" "}
         </h1>
 
-        <form className="contactform" ref={form} onSubmit={handleSubmit}>
+        <form className="contactform"  onSubmit={handleSubmit}>
           <input
             type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="email"
             placeholder="Your Email"
-            name="from_email"
+            
             required
           />
           <input
             type="tel"
+            value={number} 
+            onChange={(e) => setNumber(e.target.value)}
             id="phoneNumber"
             placeholder="Your WhatsApp Number"
             className="fullname"
-            name="phoneNumber"
+            
             pattern="[0-9]{10}"
             required
           />
-          <select className="email" name="from_state" required>
+          <select type="text" value={state} onChange={(e) => setState(e.target.value)} className="email" required>
             <option value="" disabled selected>
               Select your state
             </option>
@@ -95,7 +140,7 @@ const Popupopen = () => {
             <option value="Other/Abroad">Other/Abroad</option>
           </select>{" "}
           <br />
-          <button type="submit" value="Send" className="submitbtn">
+          <button type="submit" className="submitbtn">
             Submit
           </button>
         </form>

@@ -146,7 +146,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: white;
+  background-color:#333;
   font-size: 19px;
   margin-bottom: 1rem;
   
