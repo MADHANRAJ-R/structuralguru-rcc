@@ -151,7 +151,7 @@ const section3 = () => {
         <div className="sec-4-center-line"></div>
         <ul>
           <li>Basics of Structural design</li>
-          <li>Concepts</li>
+          <li>Structural design concepts</li>
           <li>Manual loading calculation in xl</li>
           <li>One way slab</li>
           <li>Two way Slab</li>
@@ -159,19 +159,19 @@ const section3 = () => {
           <li>Singly Reinforced Beam</li>
           <li>Doubly Reinforced Beam</li>
           <li>Over/Under Reinforced Beams</li>
-          <li>Axial</li>
-          <li>Uniaxial</li>
-          <li>Biaxial</li>
-          <li>Double biaxial</li>
-          <li>Square</li>
-          <li>Rectangle</li>
+          <li>Axial columns</li>
+          <li>Uniaxial columns</li>
+          <li>Biaxial columns</li>
+          <li>Double biaxial columns</li>
+          <li>Square columns</li>
+          <li>Rectangle columns</li>
           <li>Circular columns</li>
           <li>Beam & Column crack checks</li>
-          <li>Isolated</li>
-          <li>Combined</li>
-          <li>Mat</li>
-          <li>Raft</li>
-          <li>Strip</li>
+          <li>Isolated foundations</li>
+          <li>Combined foundations</li>
+          <li>Mat foundations</li>
+          <li>Raft foundations</li>
+          <li>Strip foundations</li>
           <li>Strap foundations</li>
           <li>Pile & various pile-cap designs.</li>
         </ul>
