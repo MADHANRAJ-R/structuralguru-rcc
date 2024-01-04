@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+
 import "./section_3.css";
 import tick from "../assets/tick-symbol.png";
 import broucherImg from "../assets/rccImg.jpg";
@@ -136,30 +136,51 @@ const section3 = () => {
           </li>
         </ul>
         <div className="pricing-btn">
-          <Link
-            activeClass="active"
-            to="paymentId"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={1000}
-            className="offer-button"
+          <a
+            href="https://img1.wsimg.com/blobby/go/2e42f0cb-874d-433d-b9df-6117d6050d2b/downloads/PRMXD-001-%20PRACTICAL%20RCC%20MANUAL%20DESIGN%20TRAININ.pdf?ver=1703751856966"
+            rel="noreferrer"
+            target="_blank"
           >
-            <button>Buy Now</button>
-          </Link>
+            <button className="course-pdf">View Syllabus Brochure</button>
+          </a>
         </div>
       </div>
+
+      <div className="topics">
+        <h1>Topics of PRACTICAL RCC MANUAL DESIGN TRAINING IN XL SHEETS</h1>
+        <div className="sec-4-center-line"></div>
+        <ul>
+          <li>Basics of Structural design</li>
+          <li>Concepts</li>
+          <li>Manual loading calculation in xl</li>
+          <li>One way slab</li>
+          <li>Two way Slab</li>
+          <li>Slab Crack check</li>
+          <li>Singly Reinforced Beam</li>
+          <li>Doubly Reinforced Beam</li>
+          <li>Over/Under Reinforced Beams</li>
+          <li>Axial</li>
+          <li>Uniaxial</li>
+          <li>Biaxial</li>
+          <li>Double biaxial</li>
+          <li>Square</li>
+          <li>Rectangle</li>
+          <li>Circular columns</li>
+          <li>Beam & Column crack checks</li>
+          <li>Isolated</li>
+          <li>Combined</li>
+          <li>Mat</li>
+          <li>Raft</li>
+          <li>Strip</li>
+          <li>Strap foundations</li>
+          <li>Pile & various pile-cap designs.</li>
+        </ul>
+      </div>
+
       <div className="more-content-div animate">
         <div className="brochureImg-div">
           <img src={broucherImg} alt="broucherImg" className="brochure-img" />
         </div>
-        <a
-          href="https://img1.wsimg.com/blobby/go/2e42f0cb-874d-433d-b9df-6117d6050d2b/downloads/PRMXD-001-%20PRACTICAL%20RCC%20MANUAL%20DESIGN%20TRAININ.pdf?ver=1703751856966"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <button className="course-pdf">View Syllabus Brochure</button>
-        </a>
       </div>
     </section>
   );
