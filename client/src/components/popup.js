@@ -3,7 +3,7 @@ import axios from 'axios';
 import "./popup.css";
 
 const Popupopen = () => {
-
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [number, setNumber] = useState('');
   const [state, setState] = useState('');
@@ -20,7 +20,7 @@ const Popupopen = () => {
     }
 
     try {
-      await axios.post('https://structuralguru-rcc-sample-server.vercel.app/send-email', { email, number, state });
+      await axios.post('https://structuralguru-rcc-sample-server.vercel.app/send-email', { name, email, number, state });
       
       
     } catch (error) {
@@ -37,6 +37,15 @@ const Popupopen = () => {
         </h1>
 
         <form className="contactform"  onSubmit={handleSubmit}>
+           <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="email"
+            placeholder="Your Name"
+            
+            required
+          />
           <input
             type="email"
             value={email}
