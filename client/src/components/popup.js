@@ -12,16 +12,15 @@ const Popupopen = () => {
     e.preventDefault();
     document.querySelector(".popupdiv").style.display = "none";
 
-    // Validate email format
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       alert('Invalid email format');
       return;
     }
 
-    // Send data to the server
     try {
-      await axios.post('http://localhost:3001/send-email', { email, number, state });
+      await axios.post('https://structuralguru-rcc-sample-server.vercel.app/send-email', { email, number, state });
       
       
     } catch (error) {
@@ -29,53 +28,6 @@ const Popupopen = () => {
       alert('Error sending email. Please try again.');
     }
   };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // useEffect(() => {
-    
-  //   document.querySelector(".popupdiv").style.display = "flex";
-  // }, []);
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-    
-  //   sendEmail();
-  //   e.target.reset();
-  //   document.querySelector(".popupdiv").style.display = "none";
-  // };
-  
-
-  // const form = useRef();
-  // const sendEmail = () => {
-  //   emailjs
-  //     .sendForm(
-  //       "service_5mnamig",
-  //       "template_sumy8vq",
-  //       form.current,
-  //       "lTkxREBj-LHdnWv1w"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
 
   return (
     <div className="popupdiv">

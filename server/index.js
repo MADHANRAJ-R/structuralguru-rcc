@@ -7,7 +7,13 @@ const app = express();
 const port = 3001;
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://structuralguru-rcc-sample-client.vercel.app/"],
+    methods: ["POST"],
+    credentials: true
+  }
+));
 app.use(express.json());
 
 app.post("/send-email", (req, res) => {
