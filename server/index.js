@@ -33,7 +33,7 @@ app.post("/send-email", (req, res) => {
     from: email,
     to: "krishnakeshavdas007@gmail.com",
     subject: "New visitor for RCC training website",
-    html: `<p>You got a new visitor for RCC training website.</p><p>Name:${name} , Email: ${email} , WhatsApp Number: ${number} , State: ${state}</p>`,
+    html: `<p>You got a new visitor for RCC training website.</p><p>Name:${name} <br /> Email: ${email} <br /> WhatsApp Number: ${number} <br /> State: ${state}</p>`,
   };
 
   // Send email
