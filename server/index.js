@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors(
   {
     origin: ["https://structuralguru-rcc-sample-client.vercel.app/"],
-    methods: ["POST"],
+    methods: ["POST","GET","PUT","DELETE"],
     credentials: true
   }
 ));
