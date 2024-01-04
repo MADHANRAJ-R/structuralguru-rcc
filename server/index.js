@@ -26,8 +26,8 @@ app.post("/send-email", (req, res) => {
   const mailOptions = {
     from: email,
     to: "krishnakeshavdas007@gmail.com",
-    subject: "Form Submission",
-    html: `<p>Email: ${email}</p><p>Number: ${number}</p><p>State: ${state}</p>`,
+    subject: "New visitor for RCC training website",
+    html: `<p>You got a new visitor for RCC training website. <br />  <br /> Email: ${email}</p><p>WhatsApp Number: ${number}</p><p>State: ${state}</p>`,
   };
 
   // Send email
