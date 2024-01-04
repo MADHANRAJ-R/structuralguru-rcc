@@ -17,7 +17,7 @@ app.use(cors(
 app.use(express.json());
 
 app.post("/send-email", (req, res) => {
-  const { email, number, state } = req.body;
+  const { name, email, number, state } = req.body;
 
   // Set up nodemailer transporter
   const transporter = nodemailer.createTransport({
@@ -33,7 +33,7 @@ app.post("/send-email", (req, res) => {
     from: email,
     to: "krishnakeshavdas007@gmail.com",
     subject: "New visitor for RCC training website",
-    html: `<p>You got a new visitor for RCC training website.</p><p>Email: ${email} , WhatsApp Number: ${number} , State: ${state}</p>`,
+    html: `<p>You got a new visitor for RCC training website.</p><p>Name:${name} , Email: ${email} , WhatsApp Number: ${number} , State: ${state}</p>`,
   };
 
   // Send email
